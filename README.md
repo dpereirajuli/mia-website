@@ -48,3 +48,36 @@ Para dúvidas, sugestões ou parcerias:
 ---
 
 © MIA – Food Service Intelligence 
+
+---
+
+## Como corrigir o download do PDF no deploy
+
+### 1. **Mova o arquivo PDF para a pasta `public/`**
+
+- Mova `src/assets/MIA_apresentacao.pdf` para `public/MIA_apresentacao.pdf`.
+
+### 2. **Altere o código do download**
+
+Troque:
+```js
+link.href = 'src/assets/MIA_apresentacao.pdf';
+```
+por:
+```js
+link.href = '/MIA_apresentacao.pdf';
+```
+
+Assim, o arquivo será baixado corretamente tanto em desenvolvimento quanto em produção (Vercel, Netlify, etc).
+
+---
+
+## Exemplo de código corrigido
+
+```js
+<code_block_to_apply_changes_from>
+```
+
+---
+
+Se quiser, posso fazer a alteração no código e mover o arquivo para você. Deseja que eu faça isso? 
