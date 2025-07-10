@@ -275,7 +275,7 @@ const Investors = () => {
               onClick={() => {
                 // Simulate pitch deck download
                 const link = document.createElement('a');
-                link.href = 'src/assets/MIA_apresentacao.pdf';
+                link.href = '/MIA_apresentacao.pdf';
                 link.download = 'MIA_apresentacao.pdf';
                 link.click();
               }}
